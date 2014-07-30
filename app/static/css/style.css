@@ -1,0 +1,36 @@
+@import url(http://fonts.googleapis.com/css?family=Lato|Lobster|Montserrat:400,700);
+@import url(http://fonts.googleapis.com/css?family=Just+Another+Hand);
+
+
+table{
+  border: 15px solid black;
+  padding: 0px;
+  margin: 0px auto;
+}
+
+table td{
+  height: 50px;
+  width: 50px;
+  padding: 0px;
+  background-color: red;
+  background-size: cover;
+}
+
+table tr:nth-child(2n) td:nth-child(2n){
+  background-color: rgb(200,200,200);
+}
+
+table tr:nth-child(2n-1) td:nth-child(2n-1){
+  background-color: rgb(200,200,200);
+}
+
+table tr:nth-child(-2n+3) td:nth-child(2n-1), table tr:nth-child(2) td:nth-child(2n){
+  background-image: url('/images/1.jpg');
+}
+
+table tr:nth-child(2n+6)  td:nth-child(2n), table tr:nth-child(7) td:nth-child(2n-1){
+  /* -^-------------------^
+   * tr selected        tr selected again?*/
+  background-image: url('/images/2.jpg');
+}
+      

@@ -1,0 +1,37 @@
+
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Sum</title>
+    <link rel="stylesheet" href="/css/style.css">
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/checkers">Checkers</a></li>
+        <li><a href="/sumlist">Sumlist</a></li>
+        <li><a href="/sum">Suml</a></li>
+        <li><a href="/dice">Dice</a></li>
+      </ul>
+    </nav>
+    <h1>Sum</h1>
+    <%= v %>
+    <%= w %>
+    <%= x %>
+    <%= y %>
+    <% var sum = v + w + x + y %>
+    <% var colors; %>
+    <% if(sum % 2 === 0){ 
+        colors = "red"
+        }else{
+        colors = "blue"
+        } %>
+         <h2 style="font-size:<%= fontsize %>;border: solid;border-color:<%= color %>;border-width:<%= borderwidth %>px;"><%= v %> + <%= w %> + <%= x %> + <%= y %> =
+         <span style="color:<%= colors %>;"> <%= sum %></span>
+       </h2>
+    </body>
+</html>
+
+   

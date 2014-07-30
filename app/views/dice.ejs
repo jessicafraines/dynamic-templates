@@ -1,0 +1,35 @@
+
+
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Sumlist</title>
+    <link rel="stylesheet" href="/css/style-dice.css">
+  </head>
+  <body>
+    <h1>IT'S TIME TO ROLL SOME DICE</h2>
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/checkers">Checkers</a></li>
+        <li><a href="/sumlist">Sumlist</a></li>
+        <li><a href="/sum">Suml</a></li>
+        <li><a href="/dice">Dice</a></li>
+      </ul>
+    </nav>
+    <div>
+    <table>
+         <% for(var i = 0; i < rolls.length; i++){ %>
+       <tr>
+         <td style="background-image:url(/images/<%= rolls[i]%>.png);"> 
+          </td>    
+       </tr>
+          <% } %>
+     </table>
+   </div>
+   <div>The sum is <%= sum %> </div>
+   </body>
+</html>
+
+

@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Dynamic Templates</title>
+    <link rel="stylesheet" href="/css/style.css">
+  </head>
+  <body>
+  <nav>
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/checkers">Checkers</a></li>
+      <li><a href="/sumlist">Sumlist</a></li>
+      <li><a href="/sum">Sum</a></li>
+      <li><a href="/dice">Dice</a></li>
+    </ul>
+  </nav>
+
+    <h1 style="color:red;background-color:yellow;">Welcome to Dynamic Templates</h1>
+
+    <h2>Multiply 3 * 3 = <%= 3*3 %></h2>
+    <h2>A random number between 3 and 12 <%= Math.floor(Math.random() * 10) + 3 %></h2>
+    <% var a = 3, b = 2 %>
+    <p><%= a + b %></p>
+
+    <% if(a===3) { %>
+      <P> a is 3</p>
+    <% }else{ %>
+      <p>a not 3</p>
+    <% } %>
+
+    <% var colors = ['blue', 'green', 'yellow', 'orange', 'pink', 'purple' ] %>
+    <% var font = 12 %>
+    <% var col; %>
+    <% var fonts = ['lato','lobster','Montserrat'] %>
+    <% for(var i = 0; i < colors.length; i ++) { 
+     if (i + 1 === colors.length){ 
+         col = colors[0] 
+        }else{ 
+        col = colors[i + 1] 
+        }%>
+     <p style="color: <%= colors[i] %>;font-size: <%= font += 2 %>px;background-color: <%= col %>;"><%= colors[i] %></p>
+    <% } %>
+
+  </body>
+</html>
+

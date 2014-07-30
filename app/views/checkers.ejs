@@ -1,0 +1,32 @@
+
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Checkers</title>
+    <link rel="stylesheet" href="/css/style.css">
+  </head>
+  <body>
+    <h1 style="font-family: 'Just Another Hand', cursive;font-size: 75px; text-align: center";>Let's Play Checkers</h2>
+  <nav>
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/checkers">Checkers</a></li>
+      <li><a href="/sum">Sum</a></li>
+      <li><a href="/sumlist">Sumlist</a></li>
+      <li><a href="/dice">Dice</a></li>
+    </ul>
+  </nav>
+     <div>
+       <table>
+         <%  for(rows = 0; rows < 8; rows++){ %>
+            <tr>
+            <% for(columns = 1; columns <= 8; columns++){ %>
+            <td> </td>
+         <% } %>
+           </tr>
+         <% } %>
+       </table>
+     </div>
+  </body>
+</html>

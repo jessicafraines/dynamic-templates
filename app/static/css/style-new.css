@@ -1,0 +1,14 @@
+
+table{
+  border: 1px solid grey;
+  padding: 0px;
+}
+
+table td{
+  border: 1px solid grey;
+  padding: 10px;
+}
+
+table tr:nth-of-type(even){ 
+  background-color: grey;
+}

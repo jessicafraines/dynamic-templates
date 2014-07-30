@@ -1,0 +1,34 @@
+
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Sumlist</title>
+    <link rel="stylesheet" href="/css/style-new.css">
+  </head>
+  <body>
+  <nav>
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/checkers">Checkers</a></li>
+      <li><a href="/sumlist">Sumlist</a></li>
+    </ul>
+  </nav>
+       <table>
+         var rows =
+         <%  for(i = 0; i < list.length; i++){ %>
+          <%  var color = (list[i]%2) ? odd : even %>
+            <tr>
+              <td style="color:<%=color%>">
+                <%= list[i] %>
+              </td>
+           </tr>
+         <% } %>
+            <tr>
+              <td>
+                <%= sum %>
+              </td>
+            </tr>
+       </table>
+  </body>
+</html>
